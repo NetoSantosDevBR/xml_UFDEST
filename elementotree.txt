@@ -1,0 +1,13 @@
+1° ler xml
+2° converter em dicionario
+3° alterar valores
+5° converter pra xml
+6° salvar
+
+
+#usando elemento tree
+root = Et.parse(xml).getroot()
+nsNfe = {"ns":"http://www.portalfiscal.inf.br/nfe"}
+
+#dados da nfe
+nfe = root.find("./ns:NFe/ns:infNfe/ns:ide/ns:nNFe", nsNfe)
