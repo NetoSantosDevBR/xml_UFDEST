@@ -28,7 +28,7 @@ def conexao_banco():
     arq = ler_arquivo('comand.txt')
     caminho = str(arq[0])
     try:
-        cnxn = pyodbc.connect(f'{caminho} UID=sa;PWD=S1t3x2@1X')
+        cnxn = pyodbc.connect(f'{caminho} UID=sa;PWD=XXXXXXX')
         print('\nCONECTANDO...\n')
         print("Conexão bem sucedida !")
     except:
